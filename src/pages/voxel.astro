@@ -5,8 +5,11 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Voxel Game Engine Project" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Voxel Game Engine Project</div>
   </div>
+
+  This is a project I started a long time ago to learn computer graphics and game engine development. 
+  Here are some screenshots over the years showcasing its development.
 
   <HorizontalCard
     title="Demo Project 1"
@@ -16,36 +19,12 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     badge="NEW"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
+  <Card
     title="Demo Project 2"
-    img="/post_img.webp"
+    img="/voxel/fog.png"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
 
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
 </BaseLayout>
