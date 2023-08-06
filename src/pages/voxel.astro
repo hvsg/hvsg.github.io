@@ -1,19 +1,148 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
 import LargeCard from "../components/LargeCard.astro";
 
 ---
 
-<BaseLayout title = "Voxel Game Engine Project" sideBarActiveItemID="projects">
+<BaseLayout title = "Voxel Game Engine Prototype" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Voxel Game Engine Project</div>
+    <div class="text-3xl w-full font-bold mb-5">Voxel Game Engine Prototype</div>
   </div>
 
   This is a project I started a long time ago to learn computer graphics and game engine development. 
-  Here are some screenshots over the years showcasing its development.
+  Here are some screenshots over the years showcasing its development. It was written in C++ and the renderer used OpenGL 4. It supported client-server multiplayer using ENet, and featured an authentication system as well. Lua scripting support was added using sol2.
+
   <div class="divider my-0"></div>
 
+      <HorizontalCard
+        title="Infinite Terrain with Fog"
+        img="/voxel/fog.png"
+        url="/voxel/fog.png"
+      />
 
+
+      <HorizontalCard
+        title="Lighting"
+        img="/voxel/day_lighting.png"
+        url="/voxel/day_lighting.png"
+      />
+
+      <HorizontalCard
+        title="Deferred Shading with Shadow Map"
+        img="/voxel/shadows2.png"
+        url="/voxel/shadows2.png"
+      />
+
+      <HorizontalCard
+        title="Website"
+        img="/voxel/website.png"
+        url="/voxel/website.png"
+      />
+
+      <HorizontalCard
+        title="Game Launcher (First Version)"
+        img="/voxel/launcher1.png"
+        url="/voxel/launcher1.png"
+      />      
+
+       <HorizontalCard
+        title="Multiplayer"
+        img="/voxel/multiplayer.png"
+        url="/voxel/multiplayer.png"
+      />     
+
+       <HorizontalCard
+        title="Basic Unicode Text Support"
+        img="/voxel/unicode.png"
+        url="/voxel/unicode.png"
+      />  
+
+      <HorizontalCard
+        title="Main Menu"
+        img="/voxel/mainmenu.png"
+        url="/voxel/mainmenu.png"
+      />    
+
+      <HorizontalCard
+        title="Debug Visualization of Idle Animation"
+        img="/voxel/idle.png"
+        url="/voxel/idle.png"
+      />       
+
+      <HorizontalCard
+        title="Smooth Terrain (Marching Cubes Method)"
+        img="/voxel/terrain2.png"
+        url="/voxel/terrain2.png"
+      /> 
+
+      <HorizontalCard
+        title="Mountainous Terrain"
+        img="/voxel/mountains.png"
+        url="/voxel/mountains.png"
+      /> 
+
+      <HorizontalCard
+        title="Integration of Sky Shader"
+        img="/voxel/skyshader.png"
+        url="/voxel/skyshader.png"
+      /> 
+
+      <HorizontalCard
+        title="Integration of Star Shader"
+        img="/voxel/starshader.png"
+        url="/voxel/starshader.png"
+      /> 
+
+      <HorizontalCard
+        title="Multiplayer Deterministic Physics"
+        img="/voxel/multiplayer_physics.png"
+        url="/voxel/multiplayer_physics.png"
+      />
+
+      <HorizontalCard
+        title="Trees (Implementation of Asset Pipeline)"
+        img="/voxel/trees.png"
+        url="/voxel/trees.png"
+      />
+
+      <HorizontalCard
+        title="More Point Lights"
+        img="/voxel/lights.png"
+        url="/voxel/lights.png"
+      />       
+
+      <HorizontalCard
+        title="Player Model"
+        img="/voxel/playermodels.png"
+        url="/voxel/playermodels.png"
+      />
+
+      <HorizontalCard
+        title="First Person View"
+        img="/voxel/first_person.png"
+        url="/voxel/first_person.png"
+      />       
+
+      <HorizontalCard
+        title="Better Shadows"
+        img="/voxel/better_shadows.png"
+        url="/voxel/better_shadows.png"
+      /> 
+
+      <HorizontalCard
+        title="PBR Terrain Textures"
+        img="/voxel/sphere.png"
+        url="/voxel/sphere.png"
+      />
+
+      <HorizontalCard
+        title="Planetary Scale Dual Contouring with LOD System (Vulkan)"
+        img="/voxel/dc.png"
+        url="/voxel/dc.png"
+      />     
+
+  <!--
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm">
@@ -33,6 +162,6 @@ import LargeCard from "../components/LargeCard.astro";
       />
     </div>  
   </div>
-</div>
+</div> -->
 
 </BaseLayout>
