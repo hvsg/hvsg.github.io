@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shishir Gopinath</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+</head>
+
+<div class="navbar">
+ <ul>
+  <li><a href="{{ get_url(path='/') }}">Home</a></li>
+  <li><a href="{{ get_url(path='@/publications/_index.md') }}">Publications</a></li>
+  <li><a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a></li>
+</ul> 
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      {% block content %} {% endblock content %}
+    </div>
+  </section>
+</body>
+<footer>
+  <div class="footer">
+    <p>© 2025 Shishir Gopinath</p>
+</footer>
+</html>

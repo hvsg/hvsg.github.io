@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="title">
+  <!-- {{ section.title }} -->
+    Publications
+</h1>
+  <!-- If you are using pagination, section.pages will be empty.
+       You need to use the paginator object --> 
+  {% set current_year = section.pages[0].date | date(format="%Y") %}
+
+  <h3 class="year-heading">{{ current_year }}</h3>
+  <hr>
+
+  {% for page in section.pages %}
+
+  {% set year = page.date | date(format="%Y") %}
+  {% if year != current_year %}
+    {% set current_year = year %}
+    <h3 class="year-heading">{{ current_year }}</h3>
+    <hr>
+  {% endif %}
+  {% include "publication-card.html" %}
+  {% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Shishir Gopinath
+</h1>
+<p>
+I'm a PhD Student at Simon Fraser University's School of Computing Science with research interests spanning systems, computer vision, robotics, and graphics. My recent work focuses on GPU acceleration for simultaneous localization and mapping (SLAM).
+I am supervised by <a class="hyperlink" href="https://steveyko.github.io/">Dr. Steven Ko</a>.
+</p>
+
+<div class="social-links">
+  <a href="https://linkedin.com/in/shishir-gopinath" class="hyperlink"><img src="icons/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+  <a href="https://github.com/hvsg" class="hyperlink"></li><img src="icons/github.svg" alt="GitHub" class="social-icon"></a>
+</div>
+
+<hr>
+
+<div class="publications-container">
+  <div class="recent-publications">
+    <h2><a href="/publications">Recent Publications⭢</a></h2>
+    {% set publications = get_section(path="publications/_index.md") %}
+    {% for page in publications.pages | slice(end=3) %}
+    {% include "publication-card.html"%}
+    {% endfor %}
+  </div>
+  <div class="recent-projects">
+    <h2><a href="/projects">Recent Projects⭢</a></h2>
+    {% set projects = get_section(path="projects/_index.md") %}
+    {% for page in projects.pages | slice(end=3) %}
+    {% include "project-card.html"%}
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}

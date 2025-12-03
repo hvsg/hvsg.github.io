@@ -1,0 +1,7 @@
+{% set asset = page.colocated_path ~ path %}
+{% set processed = resize_image(path=asset, width=width, op=op | default(value="fit_width")) %}
+<img src="{{ processed.url }}"
+     alt="{{ alt | default(value="") }}"
+     width="{{ processed.width }}"
+     height="{{ processed.height }}"
+     loading="lazy">
