@@ -1,6 +1,7 @@
 +++
 title = "Voxel Game Engine Prototype"
 date = 2019-12-31
+aliases = ["/voxel/"]
 [extra]
 +++
 
