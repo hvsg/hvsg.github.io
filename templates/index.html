@@ -16,16 +16,16 @@ I am supervised by <a class="hyperlink" href="https://steveyko.github.io/">Dr. S
 
 <hr>
 
-<div class="publications-container">
+<div class="recent-container">
   <div class="recent-publications">
-    <h2><a href="/publications">Recent Publications⭢</a></h2>
+    <h2><a href="/publications">Recent Publications ></a></h2>
     {% set publications = get_section(path="publications/_index.md") %}
     {% for page in publications.pages | slice(end=3) %}
     {% include "publication-card.html"%}
     {% endfor %}
   </div>
   <div class="recent-projects">
-    <h2><a href="/projects">Recent Projects⭢</a></h2>
+    <h2><a href="/projects">Recent Projects ></a></h2>
     {% set projects = get_section(path="projects/_index.md") %}
     {% for page in projects.pages | slice(end=3) %}
     {% include "project-card.html"%}

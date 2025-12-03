@@ -65,7 +65,8 @@ a {
 }
 
 .container {
-    padding: 75px 200px 25px;
+    // padding: 75px 200px 25px;
+    padding: 75px 15% 25px;
 
 }
 
@@ -112,17 +113,20 @@ hr {
     margin-bottom: 1em;
 }
 
-.publications-container {
+.recent-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .recent-publications {
-    flex-shrink: 1;
+    flex: 1 1 400px;  /* grow=1, shrink=1, basis=400px */
+    min-width: 100px; /* don't shrink below this */
 }
 
 .recent-projects {
-    flex-shrink: 1;
+    flex: 1 1 350px;  /* grow, shrink, fixed width */
+    min-width: 50%; /* don't shrink below this */
 }
 
 .project-card {
