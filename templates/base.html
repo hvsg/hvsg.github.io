@@ -11,11 +11,18 @@
 </head>
 
 <div class="navbar">
- <ul>
-  <li><a href="{{ get_url(path='/') }}">Home</a></li>
-  <li><a href="{{ get_url(path='@/publications/_index.md') }}">Publications</a></li>
-  <li><a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a></li>
-</ul> 
+  <div  class="navbar-left">
+    <ul>
+      <li><a href="{{ get_url(path='/') }}">Home</a></li>
+      <li><a href="{{ get_url(path='@/publications/_index.md') }}">Publications</a></li>
+      <li><a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a></li>
+    </ul> 
+  </div>
+
+  <div class="navbar-right social-links">
+    <a href="https://linkedin.com/in/shishir-gopinath" class="hyperlink"><img src="/icons/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+    <a href="https://github.com/hvsg" class="hyperlink"><img src="/icons/github.svg" alt="GitHub" class="social-icon"></a>
+  </div>
 </div>
 
 <body>
