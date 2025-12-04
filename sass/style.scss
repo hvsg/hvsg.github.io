@@ -139,19 +139,19 @@ hr {
     background-color: none;
     border-radius: 5px;
     padding: 15px;
-    margin-bottom: 15px;
+    // display: inline-block;
+    display: flex;
+    gap: 1em;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.project-card-element{
     display: inline-block;
     vertical-align: middle;
+    white-space: normal;
 
-    h2 {
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin-bottom: 5px;
-    }
-
-}
+}   
 
 .project-image {
     border-radius: 10px;
@@ -164,10 +164,6 @@ hr {
     &:hover {
         text-decoration: underline;
     }
-}
-
-.social-links {
-    // margin: 1em;
 }
 
 .social-icon {

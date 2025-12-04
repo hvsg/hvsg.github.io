@@ -1,5 +1,5 @@
-  <div class="project-card" style="display: flex; gap: 20px;">
-    <div style="flex-shrink: 0;">
+  <div class="project-card">
+    <div class="project-card-element">
       {% for asset in page.assets %}
         {%- if asset is matching("[.](jpg|png)$") -%}
         {% set image = resize_image(path=asset, width=300, height=150, op="fill") %}
@@ -9,7 +9,7 @@
       {% endfor %}
     </div>
     
-    <div style="flex: 1;">
+    <div class="project-card-element">
       <h3>{{ page.title }}</h3><br>
       {% if page.extra.code is defined %}
       <a class="button-link" href="{{ page.extra.code | safe }}">Code</a>
