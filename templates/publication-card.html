@@ -1,6 +1,6 @@
   <div class="publication-card">
     <h3>{{ page.title }}</h3>
-    <i>{{ page.extra.authors | markdown | safe }}</i>
+    <div class="author-text">{{ page.extra.authors | markdown | safe }}</div>
     {{ page.extra.venue | safe }} | {{ page.date | date(format="%Y") }}<br>
     <hr>
     {% if page.extra.link is defined %}
