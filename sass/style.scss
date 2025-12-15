@@ -157,13 +157,14 @@ hr {
 }
 
 .recent-publications {
-    flex: 1 1 400px;  /* grow=1, shrink=1, basis=400px */
-    min-width: 100px; /* don't shrink below this */
+    flex: 1 1 40%;  /* grow=1, shrink=1, basis=400px */
+    // min-width: 100px; /* don't shrink below this */
+    // min-width: 40%; /* don't shrink below this */
 }
 
 .recent-projects {
-    flex: 1 1 350px;  /* grow, shrink, fixed width */
-    min-width: 50%; /* don't shrink below this */
+    flex: 1 1 40%;  /* grow, shrink, fixed width */
+    // min-width: 40%; /* don't shrink below this */
 }
 
 .project-card {
