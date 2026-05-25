@@ -14,4 +14,8 @@
     {% if page.extra.code is defined %}
     <a class="button-link" href="{{ page.extra.code | safe }}">Code</a>
     {% endif %}
+
+    {% if page.extra.poster is defined %}
+    <a class="button-link" href="{{ page.extra.poster | safe }}">Poster</a>
+    {% endif %}
   </div>

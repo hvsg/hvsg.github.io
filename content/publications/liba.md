@@ -5,5 +5,6 @@ date = 2023-07-04
 venue = "ICRA"
 link = "https://ieeexplore.ieee.org/document/10160499"
 code = "https://github.com/sfu-rsl/gpu-block-solver"
+poster = "/posters/ICRA_2023_Poster.pdf"
 authors = "**Shishir Gopinath**, Karthik Dantu, Steven Y. Ko"
 +++
