@@ -15,7 +15,7 @@
 
   {% set year = page.date | date(format="%Y") %}
   {% if year != current_year %}
-    {% set current_year = year %}
+    {% set_global current_year = year %}
     <h3 class="year-heading">{{ current_year }}</h3>
     <hr>
   {% endif %}
