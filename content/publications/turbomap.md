@@ -5,5 +5,6 @@ date = 2026-06-18
 venue = "IROS"
 arxiv = "https://arxiv.org/abs/2511.02036"
 code = "https://github.com/sfu-rsl/TurboMap"
+poster = "/posters/TurboMap_Poster.pdf"
 authors = "Parsa Hosseininejad, Kimia Khabiri, **Shishir Gopinath**, Soudabeh Mohammadhashemi, Karthik Dantu, Steven Y. Ko"
 +++
